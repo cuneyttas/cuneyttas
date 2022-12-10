@@ -1,0 +1,124 @@
+<header class="yuvarlak-kose">
+    <div class="logo">
+        <figure>
+            <img
+                src="/resimler/cuneyt-tas-logo.jpg"
+                alt="Cüneyt TAŞ Logo"
+                width="50px"
+                height="50px"
+            />
+        </figure>
+        <div class="logo-yazi">
+            <div class="logo-isim">Cüneyt TAŞ</div>
+            <div class="logo-alt-yazi">Kişisel İnternet Sitesi</div>
+        </div>
+    </div>
+    <nav class="ana-menu">
+        <ul>
+            <li><a href="/">ANA SAYFA</a></li>
+            <li><a href="#">ÖZGEÇMİŞ</a></li>
+            <li><a href="#">GALERİ</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">İLETİŞİM</a></li>
+        </ul>
+    </nav>
+    <div class="arama-ve-hamburger-menu">
+        <div class="arama-alani">
+            <a href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+        <nav class="hamburger-menu">
+            <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </nav>
+    </div>
+</header>
+
+<style lang="scss">
+    @import "../stiller/_degiskenler.scss";
+    @import "../stiller/_fontlar.scss";
+
+    header {
+        background-color: white;
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 450px 1fr 50px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        box-sizing: border-box;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        max-width: 1350px;
+        width: 95%;
+        z-index: 3;
+
+        .logo {
+            display: grid;
+            grid-template-columns: 50px 1fr;
+            grid-gap: 10px;
+
+            figure {
+                & > img {
+                    border-radius: 50%;
+                }
+            }
+
+            .logo-yazi {
+                color: $koyu-gri;
+
+                .logo-isim {
+                    font-size: 26px;
+                    font-weight: bold;
+                }
+
+                .logo-alt-yazi {
+                    font-size: 15px;
+                }
+            }
+        }
+
+        .ana-menu {
+            ul {
+                & > li {
+                    display: inline-block;
+                    text-transform: uppercase;
+
+                    &:not(:last-child) {
+                        margin-right: 20px;
+                    }
+
+                    & > a {
+                        text-decoration: none;
+                        color: $koyu-gri;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: $mavi;
+                        }
+                    }
+                }
+            }
+        }
+
+        .arama-ve-hamburger-menu {
+            text-align: right;
+            display: grid;
+            grid-template-columns: 20px 1fr;
+
+            a {
+
+                i {
+                    color: $koyu-gri;
+                }
+
+                &:hover {
+                    color: $mavi;
+
+                    i {
+                        color: inherit;
+                    }
+                }
+            }
+        }
+    }
+</style>
