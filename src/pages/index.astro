@@ -11,25 +11,25 @@ import AnaHat from '../layouts/ana-hat.astro';
             <div class="manset-icerik-yazisi">
                 <div>
                     <h1>CÜNEYT TAŞ</h1>
-                    <h2>WORDPRESS / WEB GELİŞTİRİCİSİ</h2>
+                    <h2 class="sari-tip-baslik">WORDPRESS / WEB GELİŞTİRİCİSİ</h2>
                     <hr>
                     <p>Kişisel internet siteme hoşgeldiniz.</p>
                     <p>Bu sitede blog yazıları, makaleler, paylaşımlar, fotoğraflar, okuyup beğendiğim kitaplar, önerdiğim filmler, özgeçmişime dair bilgiler ve daha bir çok şeyi sizlerle paylaşmayı düşünüyorum. Facebook hesabımı kapatalı yıllar oldu. Bu tür sosyal ağlar yerine kendi sitemden paylaşımlar yapmış olacağım, hem de internet sitemi sürekli geliştirerek internet programlama ve tasarımı bilgilerimi de bununla beraber geliştirmeyi düşünüyorum.</p>
                     <a href="#" class="dugme">Özgeçmişim</a>
                 </div>
-                <div>
-                    <h2>fdgjnfdkn dkng</h2>
-                    <figure>
-                        <i class="fa-solid fa-keyboard"></i>
+                <div class="durum-mesaji">
+                    <figure class="ust-denden">
+                        <i class="fa-solid fa-quote-left"></i>
                     </figure>
+                    <h2 class="sari-tip-baslik">DURUM MESAJI</h2>
                     <div>
                         <p>Sitemin tasarımını yeniliyorum. Mümkün olan en yakın zamanda yeni tasarımını kullanıma açacağım.</p>
                         <p>10 Aralık 2022, Cumartesi</p>
                     </div>
+                    <figure class="alt-denden">
+                        <i class="fa-solid fa-quote-right"></i>
+                    </figure>
                 </div>
-
-                </div>
-
             </div>
             <div class="sosyal-medya">
                 <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
@@ -38,23 +38,6 @@ import AnaHat from '../layouts/ana-hat.astro';
                 <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
                 <a href="#"><i class="fa-brands fa-square-github"></i></a>
             </div>
-        </div>
-    </section>
-    <section class="durum-mesaji-ve-son-resimler-bolumu konteyner">
-        <div class="durum-mesaji">
-            <h2>Yeni Tasarım</h2>
-            <div class="durum-mesaji-icerik">
-                <figure>
-                    <i class="fa-solid fa-keyboard"></i>
-                </figure>
-                <div>
-                    <p>Sitemin tasarımını yeniliyorum. Mümkün olan en yakın zamanda yeni tasarımını kullanıma açacağım.</p>
-                    <p>10 Aralık 2022, Cumartesi</p>
-                </div>
-            </div>
-        </div>
-        <div class="son-resimler">
-
         </div>
     </section>
     <section class="son-gonderiler">
@@ -162,7 +145,8 @@ import AnaHat from '../layouts/ana-hat.astro';
                 border-bottom-right-radius: 100px;
                 border-top-right-radius: 10px;
                 display: grid;
-                grid-template-columns: 2fr 1fr;
+                grid-template-columns: 3fr 1fr;
+                column-gap: 50px;
 
                 h1 {
                     font-size: 45px;
@@ -173,20 +157,45 @@ import AnaHat from '../layouts/ana-hat.astro';
                     color: $beyaz;
                 }
 
-                h2 {
-                    text-transform: uppercase;
-                    color: $sari;
-                    margin-top: 10px;
-                    font-size: 20px;
-                    line-height: 20px;
-                }
-
                 p {
                     color: $beyaz;
 
                     &:last-of-type {
                         margin-bottom: 0;
                     }
+                }
+
+                .durum-mesaji {
+                    margin-top: 50px;
+
+                    figure {
+
+                        &.ust-denden {
+                            margin-left: -20px;
+                            margin-bottom: 20px;
+                        }
+
+                        &.alt-denden {
+                            text-align: right;
+                            margin-right: -20px;
+                            margin-top: 20px;
+                        }
+
+                        i {
+                            color: $sari;
+                            font-size: 60px;
+                        }
+                    }
+
+                    h2 {
+                        margin-top: 0;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
                 }
             }
 
