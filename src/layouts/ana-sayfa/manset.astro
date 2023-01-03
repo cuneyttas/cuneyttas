@@ -1,0 +1,155 @@
+<section class="anasayfa-manset manset">
+    <div class="manset-icerik konteyner">
+        <figure class="ana-resim">
+            <img src="/resimler/cuneyt-tas.png" alt="Cüneyt TAŞ">
+        </figure>
+        <div class="manset-icerik-yazisi">
+            <div>
+                <h1>CÜNEYT TAŞ</h1>
+                <h2 class="sari-tip-baslik">WORDPRESS / WEB GELİŞTİRİCİSİ</h2>
+                <hr>
+                <p>Kişisel internet siteme hoşgeldiniz.</p>
+                <p>Bu sitede blog yazıları, makaleler, paylaşımlar, fotoğraflar, okuyup beğendiğim kitaplar, önerdiğim filmler, özgeçmişime dair bilgiler ve daha bir çok şeyi sizlerle paylaşmayı düşünüyorum. Facebook hesabımı kapatalı yıllar oldu. Bu tür sosyal ağlar yerine kendi sitemden paylaşımlar yapmış olacağım, hem de internet sitemi sürekli geliştirerek internet programlama ve tasarımı bilgilerimi de bununla beraber geliştirmeyi düşünüyorum.</p>
+                <a href="#" class="dugme">Özgeçmişim</a>
+            </div>
+            <div class="durum-mesaji">
+                <figure class="ust-denden">
+                    <i class="fa-solid fa-quote-left"></i>
+                </figure>
+                <h3 class="sari-tip-baslik">DURUM MESAJI</h3>
+                <div>
+                    <p>Sitemin tasarımını yeniliyorum. Mümkün olan en yakın zamanda yeni tasarımını kullanıma açacağım.</p>
+                    <p>10 Aralık 2022, Cumartesi</p>
+                </div>
+                <figure class="alt-denden">
+                    <i class="fa-solid fa-quote-right"></i>
+                </figure>
+            </div>
+        </div>
+        <div class="sosyal-medya">
+            <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-square-github"></i></a>
+        </div>
+    </div>
+</section>
+
+<style lang="scss">
+
+    @import 'src/stiller/_degiskenler.scss';
+
+    .anasayfa-manset {
+        background-image: url("/resimler/test.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 70px;
+
+        .manset-icerik {
+            display: grid;
+            grid-template-columns: 1fr 12fr 1fr;
+            position: relative;
+            z-index: 2;
+            align-items: center;
+            justify-items: end;
+
+            .ana-resim {
+                background-color: rgba($sari, 0.8);
+                position: relative;
+                width: 280px;
+                height: 100%;
+                border-top-left-radius: 100px;
+                border-bottom-left-radius: 50px;
+
+                & > img {
+                    position: absolute;
+                    max-width: inherit;
+                    bottom: 0;
+                    left: -40px;
+                }
+            }
+
+            &-yazisi {
+                background-color: rgba($mavi, 0.8);
+                padding: 30px 50px 30px 80px;
+                border: 5px solid $sari;
+                border-left: none;
+                border-bottom-right-radius: 100px;
+                border-top-right-radius: 10px;
+                display: grid;
+                grid-template-columns: 3fr 1fr;
+                column-gap: 50px;
+
+                h1 {
+                    font-size: 45px;
+                    line-height: 55px;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    text-transform: uppercase;
+                    color: $beyaz;
+                }
+
+                h2 {
+                    text-align: left;
+                }
+
+                p {
+                    color: $beyaz;
+                }
+
+                .durum-mesaji {
+                    margin-top: 50px;
+
+                    figure {
+
+                        &.ust-denden {
+                            margin-left: -20px;
+                            margin-bottom: 20px;
+                        }
+
+                        &.alt-denden {
+                            text-align: right;
+                            margin-right: -20px;
+                            margin-top: 20px;
+                        }
+
+                        i {
+                            color: $sari;
+                            font-size: 60px;
+                        }
+                    }
+
+                    h2 {
+                        margin-top: 0;
+                    }
+
+                    p {
+                        font-size: 15px;
+                        line-height: 20px;
+                    }
+
+                }
+            }
+
+            .sosyal-medya {
+                display: grid;
+
+                a {
+                    font-size: 50px;
+                    color: $beyaz;
+                    transition: 0.3s;
+
+                    &:not(:last-child) {
+                        margin-bottom: 10px;
+                    }
+
+                    &:hover {
+                        color: $sari;
+                    }
+                }
+            }
+        }
+    }
+
+</style>

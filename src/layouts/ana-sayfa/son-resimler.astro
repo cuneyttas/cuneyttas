@@ -1,0 +1,39 @@
+<section class="splide">
+    <div class="splide__track">
+        <ul class="splide__list">
+            <li class="splide__slide">
+                <figure>
+                    <img src="/resimler/bag_evi.webp" alt="Bağ Evi">
+                </figure>
+            </li>
+            <li class="splide__slide">
+                <figure>
+                    <img src="/resimler/bag_evi.webp" alt="Bağ Evi">
+                </figure>
+            </li>
+            <li class="splide__slide">
+                <figure>
+                    <img src="/resimler/bag_evi.webp" alt="Bağ Evi">
+                </figure>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<style lang="scss">
+
+    @import 'src/stiller/_degiskenler.scss';
+    @import '@splidejs/splide/css/skyblue';
+
+</style>
+
+<script>
+
+    import Splide from '@splidejs/splide';
+    var splide = new Splide( '.splide', {
+        type   : 'loop',
+        perPage: 1,
+    } );
+    splide.mount();
+
+</script>

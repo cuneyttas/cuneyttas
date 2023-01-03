@@ -1,0 +1,130 @@
+<section class="anasayfa-son-gonderiler gri-arkaplan">
+    <div class="dugme-ve-baslik">
+        <h2>SON GÖNDERİLER</h2>
+        <a href="#" class="dugme">Bütün Bloglarım</a>
+    </div>
+    <div class="anasayfa-son-gonderiler-icerik konteyner">
+        <div class="gonderi-kutusu">
+            <a href="#" class="blog-resim-baglantisi">
+                <figure>
+                    <img src="/resimler/bizim-kus.webp" alt="Kuş">
+                </figure>
+            </a>
+            <div class="gonderi-kutusu-yazi-alani">
+                <a href="#" class="kategori-ismi">Yaşam</a>
+                <a href="#" class="mavi-baglanti">
+                    <h3>Kuşumuz Kafesinin Kapağını Kendi Açıyor</h3>
+                </a>
+                <p>Bizim kuşun farklı bir özelliği var. Kafesinin kapağını kendisi açıp firar edebiliyor. Bu yüzden çıkmasını istemediğimiz zamanlarda kapağını duvara döndürmek zorunda kalıyoruz...</p>
+                <hr class="gri-cizgi">
+                <div class="blog-tarih">16 Kasım 2017, Cumartesi</div>
+            </div>
+        </div>
+        <div class="gonderi-kutusu">
+            <a href="#" class="blog-resim-baglantisi">
+                <figure>
+                    <img src="/resimler/bizim-kus.webp" alt="Kuş">
+                </figure>
+            </a>
+            <div class="gonderi-kutusu-yazi-alani">
+                <a href="#" class="kategori-ismi">Yaşam</a>
+                <a href="#" class="mavi-baglanti">
+                    <h3>Kuşumuz Kafesinin Kapağını Kendi Açıyor</h3>
+                </a>
+                <p>Bizim kuşun farklı bir özelliği var. Kafesinin kapağını kendisi açıp firar edebiliyor. Bu yüzden çıkmasını istemediğimiz zamanlarda kapağını duvara döndürmek zorunda kalıyoruz...</p>
+                <hr class="gri-cizgi">
+                <div class="blog-tarih">16 Kasım 2017, Cumartesi</div>
+            </div>
+        </div>
+        <div class="gonderi-kutusu">
+            <a href="#" class="blog-resim-baglantisi">
+                <figure>
+                    <img src="/resimler/bizim-kus.webp" alt="Kuş">
+                </figure>
+            </a>
+            <div class="gonderi-kutusu-yazi-alani">
+                <a href="#" class="kategori-ismi">Yaşam</a>
+                <a href="#" class="mavi-baglanti">
+                    <h3>Kuşumuz Kafesinin Kapağını Kendi Açıyor</h3>
+                </a>
+                <p>Bizim kuşun farklı bir özelliği var. Kafesinin kapağını kendisi açıp firar edebiliyor. Bu yüzden çıkmasını istemediğimiz zamanlarda kapağını duvara döndürmek zorunda kalıyoruz...</p>
+                <hr class="gri-cizgi">
+                <div class="blog-tarih">16 Kasım 2017, Cumartesi</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<style lang="scss">
+
+    @import 'src/stiller/_degiskenler.scss';
+
+    .anasayfa-son-gonderiler {
+
+        &-icerik {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            column-gap: 60px;
+
+            .blog-resim-baglantisi {
+                display: inline;
+
+                figure {
+
+                    & > img {
+                        height: 220px;
+                        width: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+            }
+
+            .gonderi-kutusu {
+                background-color: $beyaz;
+
+                .gonderi-kutusu-yazi-alani {
+                    padding: 30px;
+
+                    .kategori-ismi {
+                        background-color: $turuncu;
+                        color: $beyaz;
+                        font-size: 14px;
+                        padding: 5px 15px;
+                        border-radius: 50px;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 5px;
+                        border-bottom-right-radius: 10px;
+                        border-bottom-left-radius: 5px;
+
+                        &:hover {
+                            background-color: $sari;
+                        }
+                    }
+
+                    h3 {
+                        margin-top: 0;
+                        font-size: 24px;
+                        line-height: 30px;
+                        font-weight: 500;
+                        margin-bottom: 0px;
+                    }
+
+                    hr {
+                        margin-top: 20px;
+                        margin-bottom: 15px;
+                    }
+
+                    .blog-tarih {
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+</style>
